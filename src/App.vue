@@ -1,11 +1,15 @@
 <script setup lang="ts">
-import { NButton } from "naive-ui";
+import { NConfigProvider } from "naive-ui";
+
+import GuessSubmitForm from "./components/GuessSubmitForm.vue";
+import LetterRefinementForm from "./components/LetterRefinementForm.vue";
+import PossibleWordList from "./components/PossibleWordList.vue";
 </script>
 
 <template>
-  <div>
-    <h1>Try to get Naive UI working</h1>
-    <p>Test button</p>
-    <n-button>Press me</n-button>
-  </div>
+  <n-config-provider>
+    <GuessSubmitForm />
+    <LetterRefinementForm />
+    <PossibleWordList />
+  </n-config-provider>
 </template>
