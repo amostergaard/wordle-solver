@@ -7,6 +7,7 @@ const enabled = ref(false);
 
 <template>
   <div>
+    <div class="container mx-auto px-4">Contained Item</div>
     <h1 class="text-3xl font-bold underline">Hello world!</h1>
     <div class="bg-black rounded-lg text-white">Box</div>
 
